@@ -1,0 +1,11 @@
+@use '@/styles/base/variables';
+@import "@/styles/base/mixin";
+
+html{
+  margin: 0;
+}
+body{
+  font-family: sans-serif;
+  color: variables.$fontColor;
+  font-size: variables.$mediumSize;
+}

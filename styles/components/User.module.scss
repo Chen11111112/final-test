@@ -1,0 +1,125 @@
+.container {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f9f9f9;
+}
+
+.card {
+  margin: 20px;
+  width: 100%;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+
+  h1 {
+      margin: 0 0 20px 0;
+  }
+}
+
+.searchGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  label {
+      font-size: 14px;
+      color: #666;
+  }
+
+  .inputRow {
+      display: flex;
+      gap: 10px;
+
+      input {
+          flex: 1;
+          padding: 10px 15px;
+          border-radius: 8px;
+          border: 1px solid #ddd;
+          outline: none;
+      }
+
+      button {
+          padding: 10px 20px;
+          background-color: #007aff;
+          color: #fff;
+          border: none;
+          border-radius: 8px;
+          cursor: pointer;
+          font-weight: 500;
+          &:hover { background-color: #005ecb; }
+      }
+  }
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.modal {
+  background-color: #fff;
+  padding: 35px;
+  border-radius: 16px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
+  cursor: default;
+
+  h3 { margin-top: 0; margin-bottom: 20px; text-align: center; }
+}
+
+.formGroup {
+  margin-bottom: 15px;
+
+  label {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 14px;
+      font-weight: bold;
+  }
+
+  input {
+      width: 100%;
+      padding: 12px;
+      border-radius: 8px;
+      border: 1.5px solid #eee;
+      box-sizing: border-box;
+      font-size: 16px;
+      outline: none;
+      background-color: #fcfcfc;
+
+      &.error { border-color: #ff4d4f; }
+  }
+
+  .errorText {
+      color: #ff4d4f;
+      font-size: 12px;
+      margin: 4px 0 0 0;
+  }
+}
+
+.btnGroup {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+
+  button {
+      padding: 10px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      border: none;
+
+      &.cancel { background: #fff; border: 1px solid #ccc; flex: 1; }
+      &.submit { background: #7aa0c9; color: #fff; flex: 2; }
+  }
+}
